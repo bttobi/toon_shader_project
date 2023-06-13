@@ -4,6 +4,7 @@ import { useState, useEffect, useRef, useContext } from "react";
 import { ParametersContext } from "../contexts/ParametersContext";
 import resolveShapeType from "../functions/resolveShapeType";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
+import { Ground } from "./Ground";
 
 const MainSceneShow = () => {
   const shapeRef = useRef(null);
@@ -27,15 +28,16 @@ const MainSceneShow = () => {
   return (
     <>
       <OrbitControls />
-      <PerspectiveCamera makeDefault fov={50} position={[0, 0, 5]} />
+      <PerspectiveCamera makeDefault fov={70} position={[0, 5, 6]} />
       <ambientLight />
+      <color args={[0, 0, 0]} attach={"background"} />
       <spotLight
         color={shape.spotLightColor}
         intensity={shape.spotLightIntensity}
         position={[shape.spotLightX, shape.spotLightY, shape.spotLightZ]}
         castShadow
       />
-      <mesh ref={shapeRef}>
+      <mesh ref={shapeRef} position={[0, 2, 0]}>
         {currentShape}
         {shape.enableToon ? (
           <meshToonMaterial
@@ -58,6 +60,7 @@ const MainSceneShow = () => {
       {shape.enableFog && (
         <fog attach={"fog"} color={shape.fogColor} near={1} far={10}></fog>
       )}
+      <Ground />
     </>
   );
 };

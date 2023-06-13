@@ -268,7 +268,7 @@ const EditParameters = () => {
                 type="number"
                 min={0}
                 max={100}
-                defaultValue={0}
+                defaultValue={1}
                 step={"0.01"}
               />
             </div>
@@ -280,7 +280,7 @@ const EditParameters = () => {
                 type="number"
                 min={0}
                 max={100}
-                defaultValue={5}
+                defaultValue={4}
                 step={"0.01"}
               />
             </div>

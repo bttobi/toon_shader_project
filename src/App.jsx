@@ -20,8 +20,11 @@ const App = () => {
             </p>
           }
         >
-          <div className="canvas-wrapper align-center flex flex-col items-center justify-center lg:mt-0">
-            <Canvas shadows className="cursor-grab">
+          <div className="canvas-wrapper align-center flex flex-col items-center justify-center lg:mt-8">
+            <Canvas
+              shadows
+              className="border-teal-00 mt-12 cursor-grab rounded-lg border-8 border-teal-700"
+            >
               <MainSceneShow />
             </Canvas>
             <label
