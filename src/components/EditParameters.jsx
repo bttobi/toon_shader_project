@@ -218,6 +218,10 @@ const EditParameters = () => {
             >
               <option>none</option>
               <option>bricks</option>
+              <option>pebbles</option>
+              <option>grass</option>
+              <option>unicat</option>
+              <option>gigachad</option>
             </select>
           </div>
         </div>

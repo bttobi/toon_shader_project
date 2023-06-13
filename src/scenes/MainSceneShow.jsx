@@ -1,13 +1,18 @@
-import { PerspectiveCamera, OrbitControls, Shape } from "@react-three/drei";
-import { useFrame } from "@react-three/fiber";
+import { PerspectiveCamera, OrbitControls } from "@react-three/drei";
+import { useFrame, useLoader } from "@react-three/fiber";
 import { useState, useEffect, useRef, useContext } from "react";
 import { ParametersContext } from "../contexts/ParametersContext";
 import resolveShapeType from "../functions/resolveShapeType";
+import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 const MainSceneShow = () => {
   const shapeRef = useRef(null);
   const shape = useContext(ParametersContext);
   const [currentShape, setCurrentShape] = useState();
+  const colorMap =
+    shape.materialTexture != "none"
+      ? useLoader(TextureLoader, `${shape.materialTexture}.jpg`)
+      : "";
 
   useFrame(() => {
     shapeRef.current.rotation.x += Number(shape.rotateSpeedX);
@@ -34,17 +39,19 @@ const MainSceneShow = () => {
         {currentShape}
         {shape.enableToon ? (
           <meshToonMaterial
-            key={shape.enableTransparency}
+            key={shape.enableTransparency || shape.materialTexture}
             color={shape.materialColor}
             transparent={shape.enableTransparency}
             opacity={Number(shape.transparencyOpacity)}
+            map={colorMap}
           />
         ) : (
           <meshStandardMaterial
-            key={shape.enableTransparency}
+            key={shape.enableTransparency || shape.materialTexture}
             color={shape.materialColor}
             transparent={shape.enableTransparency}
             opacity={Number(shape.transparencyOpacity)}
+            map={colorMap}
           />
         )}
       </mesh>
