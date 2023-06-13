@@ -13,7 +13,13 @@ const App = () => {
     <ParametersProvider>
       <Navbar />
       <main className="align-center flex h-full flex-col justify-evenly pb-4 lg:flex-row">
-        <Suspense fallback={null}>
+        <Suspense
+          fallback={
+            <p className="text-3xl font-bold text-red-500">
+              UNABLE TO LOAD 3D MODEL - PLEASE REFRESH THE PAGE
+            </p>
+          }
+        >
           <div className="canvas-wrapper align-center flex flex-col items-center justify-center lg:mt-0">
             <Canvas shadows className="cursor-grab">
               <MainSceneShow />
