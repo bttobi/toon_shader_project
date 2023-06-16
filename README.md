@@ -37,17 +37,16 @@ OR `npm run build` and then `npm run preview` for production environment. </br>
 #
 
 ### 🎨 Desktop preview
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/45a2b371-798b-4534-ad69-d79db4695a63)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/0c8ae274-1c39-410c-895a-014b386e9e0f)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/d042b95a-52d0-4240-9d71-54cf2a0c6ff9)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/21c30367-6f83-44dc-a886-3a234dd71dd5)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/93a9f908-d634-4b38-ae2f-bf3af8a27470)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/49421f53-a941-40f1-98a7-1925d52f1214)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/7be00463-2067-4d50-9249-3586bba9cd39)
+
 
 
 ### 🎨 Mobile preview
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/97fd0a4e-8401-4a9c-936a-0eb075522dd7)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/7ff2e6ce-972c-49da-b4f7-896d08630e2d)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/f3274978-8d4f-4093-b661-254babe69357)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/03195094-3066-4912-a247-6f6a6456ab36)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/63b4af2e-bf7e-419c-967c-fa5fa0ca294c)
-![image](https://github.com/bttobi/toon_shader_project/assets/76923032/5cb7cd8d-c6e5-4b9b-940e-919617c6ea0f)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/e3b75da3-b3f0-4487-af1f-b4f0dc6a3f8b)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/8446c93d-902a-433d-8590-c307ec102d85)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/2adf9758-b0fc-4482-b5e9-c4bcfd9efd87)
+![image](https://github.com/bttobi/toon_shader_project/assets/76923032/c82a04c1-3bd4-4296-8074-9933d1119e42)
+
 
